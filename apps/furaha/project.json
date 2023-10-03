@@ -15,8 +15,22 @@
         "main": "apps/furaha/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/furaha/tsconfig.app.json",
-        "assets": ["apps/furaha/src/favicon.ico", "apps/furaha/src/assets"],
-        "styles": ["apps/furaha/src/styles.scss"],
+        "assets": [
+          "apps/furaha/src/favicon.ico",
+          "apps/furaha/src/assets",
+          {
+            "glob": "*.svg",
+            "input": "libs/shared/icon/src/lib/svg/",
+            "output": "svg"
+          }
+        ],
+        "styles": [
+          "apps/furaha/src/styles.scss",
+          "node_modules/aos/dist/aos.css"
+        ],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/shared/theme/src/lib/styles"]
+        },
         "scripts": []
       },
       "configurations": {

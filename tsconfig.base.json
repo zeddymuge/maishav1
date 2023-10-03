@@ -14,7 +14,21 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@furaha/shared/icon": ["libs/shared/icon/src/index.ts"],
+      "@furaha/shared/theme": ["libs/shared/theme/src/index.ts"],
+      "@furaha/web/components/about-us": [
+        "libs/web/components/about/src/index.ts"
+      ],
+      "@furaha/web/components/clients": [
+        "libs/web/components/clients/src/index.ts"
+      ],
+      "@furaha/web/components/header": [
+        "libs/web/components/header/src/index.ts"
+      ],
+      "@furaha/web/components/hero": ["libs/web/components/hero/src/index.ts"],
+      "@furaha/web/pages/home": ["libs/web/pages/home/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

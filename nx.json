@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "tasksRunnerOptions": {
     "default": {
@@ -80,5 +80,9 @@
     "@nx/angular:component": {
       "style": "scss"
     }
+  },
+  "workspaceLayout": {
+    "libsDir": "libs",
+    "appsDir": "apps"
   }
 }
