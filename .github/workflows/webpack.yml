@@ -30,7 +30,8 @@ jobs:
         pnpm build
 
     - name: Deploy
-      run: |
-        pwd
-        ls -lart dist/apps/furaha
+      uses: JamesIves/github-pages-deploy-action@4.4.3
+      with:
+        branch: gh-pages
+        folder: ./dist/apps/furaha
 
