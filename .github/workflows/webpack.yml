@@ -32,5 +32,5 @@ jobs:
     - name: Deploy
       run: |
         pwd
-        ls -lart
+        ls -lart dist/apps/furaha
 
