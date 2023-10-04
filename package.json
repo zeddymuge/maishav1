@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "serve": "nx serve furaha --port 4400"
+    "serve": "nx serve furaha --port 4400",
+    "build": "nx build furaha"
   },
   "private": true,
   "dependencies": {
