@@ -26,21 +26,21 @@ export class TeamComponent {
     },
     {
       name: 'John Doe',
-      title: 'Designer',
+      title: 'Surgeon',
       description: 'Lorem ipsum dolor sit amet.',
       email: 'example@example.com',
       imageUrl: "assets/img/user.svg"
     },
     {
       name: 'Mike Ross',
-      title: 'Art Director',
+      title: 'Doctor',
       description: 'Lorem ipsum dolor sit amet.',
       email: 'example@example.com',
       imageUrl:"assets/img/user.svg"
     },
     {
       name: 'John Doe',
-      title: 'Designer',
+      title: 'Dentist',
       description: 'Lorem ipsum dolor sit amet.',
       email: 'example@example.com',
       imageUrl: "assets/img/user.svg"
