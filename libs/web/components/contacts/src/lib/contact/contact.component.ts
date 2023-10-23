@@ -10,21 +10,18 @@ import { ContactService } from '../contact.service';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent implements OnInit{
-  FormData! : FormGroup;
+export class ContactComponent {
+  FormData = this.builder.group({
+    Fullname: ['', [Validators.required]],
+    Email: ['', [Validators.required, Validators.email]],
+    Company: [''],
+    Message: ['', [Validators.required]]
+  }) 
   emailExists = false;
   constructor(private builder: FormBuilder,
     private contactService: ContactService){
   
   }
-ngOnInit(){
-    this.FormData = this.builder.group({
-      Fullname: new FormControl('', [Validators.required]),
-      Email: new FormControl('', [Validators.required, Validators.email]),
-      Company: new FormControl(''),
-      Message: new FormControl('', [Validators.required])
-    }) as FormGroup; 
-}
 
 onSubmit(formData: any) {
   if (this.FormData.valid && !this.emailExists) {
